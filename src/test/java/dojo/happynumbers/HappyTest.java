@@ -27,7 +27,4 @@ class HappyTest {
 
         assertThat(happy.validate(100), is(true));
     }
-
-
-
 }

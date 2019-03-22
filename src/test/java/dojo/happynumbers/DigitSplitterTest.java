@@ -22,4 +22,9 @@ class DigitSplitterTest {
         assertThat(result, is(Arrays.asList(1, 0)));
     }
 
+    @Test
+    void does6ReturnListOf6() {
+        var result = testee.split(6);
+        assertThat(result, is(Arrays.asList(6)));
+    }
 }
