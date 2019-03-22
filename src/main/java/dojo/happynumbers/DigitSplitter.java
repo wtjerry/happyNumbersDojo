@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class DigitSplitter {
+class DigitSplitter {
 
-    public List<Integer> split(int integerToSplit) {
+    List<Integer> split(int integerToSplit) {
         var integers = new ArrayList<Integer>();
         while (integerToSplit > 0) {
             integers.add(0, integerToSplit % 10);
@@ -14,5 +14,9 @@ public class DigitSplitter {
         }
 
         return Collections.unmodifiableList(integers);
+    }
+
+    int squareAndSum(List<Integer> digits) {
+        return digits.stream().reduce(0, (a, b) -> a+b);
     }
 }
