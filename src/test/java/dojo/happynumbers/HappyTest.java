@@ -3,8 +3,6 @@ package dojo.happynumbers;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
@@ -30,9 +28,6 @@ class HappyTest {
         assertThat(happy.validate(100), is(true));
     }
 
-    @Test
-    void does10ReturnListOf1And0() {
-        var result = testee.split(10);
-        assertThat(result, is(Arrays.asList(1, 0)));
-    }
+
+
 }
