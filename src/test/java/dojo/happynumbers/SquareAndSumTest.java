@@ -17,7 +17,7 @@ class SquareAndSumTest {
 
     @Test
     void does10Return1() {
-        var result = testee.squareAndSum(Arrays.asList(1, 1));
+        var result = testee.squareAndSum(Arrays.asList(1, 0));
         assertThat(result).isEqualTo(1);
     }
 
