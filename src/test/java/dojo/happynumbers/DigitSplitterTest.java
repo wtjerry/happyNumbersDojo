@@ -5,10 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class DigitSplitterTest {
     private static DigitSplitter testee;
@@ -21,12 +18,12 @@ class DigitSplitterTest {
     @Test
     void does10ReturnListOf1And0() {
         var result = testee.split(10);
-        assertThat(result, is(Arrays.asList(1, 0)));
+        assertThat(result).isEqualTo(Arrays.asList(1, 0));
     }
 
     @Test
     void does6ReturnListOf6() {
         var result = testee.split(6);
-        assertThat(result, is(Collections.singletonList(6)));
+        assertThat(result).isEqualTo(Collections.singletonList(6));
     }
 }

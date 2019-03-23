@@ -1,30 +1,21 @@
 package dojo.happynumbers;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class HappyTest {
-    static Happy testee;
-
-    @BeforeAll
-    static void Initiate() {
-        testee = new Happy();
-    }
 
     @Test
     void does1ReturnTrue() {
         var happy = new Happy();
 
-        assertThat(happy.validate(1), is(true));
+        assertThat(happy.validate(1)).isTrue();
     }
 
     @Test
     void does100ReturnTrue() {
         var happy = new Happy();
 
-        assertThat(happy.validate(100), is(true));
+        assertThat(happy.validate(100)).isTrue();
     }
 }

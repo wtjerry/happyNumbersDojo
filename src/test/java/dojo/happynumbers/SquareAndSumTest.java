@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class SquareAndSumTest {
     private static SquareAndSum testee;
@@ -19,18 +18,18 @@ class SquareAndSumTest {
     @Test
     void does10Return1() {
         var result = testee.squareAndSum(Arrays.asList(1, 0));
-        assertThat(result, is(1));
+        assertThat(result).isEqualTo(1);
     }
 
     @Test
     void does11Return2() {
         var result = testee.squareAndSum(Arrays.asList(1, 1));
-        assertThat(result, is(2));
+        assertThat(result).isEqualTo(2);
     }
 
     @Test
     void does17Return50() {
         var result = testee.squareAndSum(Arrays.asList(1, 7));
-        assertThat(result, is(50));
+        assertThat(result).isEqualTo(50);
     }
 }
