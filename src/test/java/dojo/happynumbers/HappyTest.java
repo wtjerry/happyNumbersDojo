@@ -1,21 +1,21 @@
 package dojo.happynumbers;
 
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.Collections;
+
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 class HappyTest {
 
     @Test
-    void when1IsCheckedSquareAndMultiplyIsCalledOnce() {
-        var happy = new Happy();
+    void does2ResultInSquareSumBeingCalled() {
+        var squareMock = mock(SquareAndSum.class);
+        var happy = new Happy(squareMock);
 
-        assertThat(happy.validate(1)).isTrue();
-    }
+        happy.validate(2);
 
-    @Test
-    void does100ReturnTrue() {
-        var happy = new Happy();
-
-        assertThat(happy.validate(100)).isTrue();
+        verify(squareMock).squareAndSum(Collections.singletonList(2));
     }
 }
