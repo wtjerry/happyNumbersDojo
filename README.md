@@ -7,3 +7,9 @@
 
 for the rules of the game see:
 http://ccd-school.de/en/coding-dojo/function-katas/happy-numbers/
+
+## event storming
+
+during the dojo we realized everyone has a different goal and want's to go in his own direction. To clarify our goal and to lead us all into the same direction, we conducted an event storming.
+
+![Event Storming](./img/swat_event_storming.jpg "One whiteboard to lead us all!")
