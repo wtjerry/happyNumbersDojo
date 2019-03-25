@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Happy" />
+        <module name="happyNumbersDojo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Happy" target="11" />
+      <module name="happyNumbersDojo" target="11" />
+      <module name="happyNumbersDojo_main" target="11" />
+      <module name="happyNumbersDojo_test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
