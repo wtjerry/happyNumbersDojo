@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class HappyTest {
 
     @Test
-    void does1ReturnTrue() {
+    void when1IsCheckedSquareAndMultiplyIsCalledOnce() {
         var happy = new Happy();
 
         assertThat(happy.validate(1)).isTrue();
