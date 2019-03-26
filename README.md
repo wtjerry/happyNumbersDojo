@@ -5,7 +5,7 @@
 
 # happy number dojo
 
-In the context of the module SW-Architecture (swat) at hslu, 4 students (@binerdy, @cyrilleulmi, @PascalStalder, @wtjerry) have found themselfs to have a common goal: To become better SW craftsmen.
+In the context of the module SW-Architecture (swat) at hslu, 4 students ([@binerdy](https://github.com/binerdy), [@cyrilleulmi](https://github.com/cyrilleulmi), [@PascalStalder](https://github.com/PascalStalder), [@wtjerry](https://github.com/wtjerry) have found themselfs to have a common goal: To become better SW craftsmen.
 We thought what better way is there to learn from each other than by programming together. And so we set out to start solving this dojo.
 
 Our focus points are:
