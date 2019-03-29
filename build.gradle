@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'jacoco'
 }
 
 group 'dojo.happynumbers'
@@ -26,4 +27,8 @@ sourceSets {
 
 test {
     useJUnitPlatform()
+}
+
+jacoco {
+    reportsDir = file("build/tmp/jacoco.exec")
 }
