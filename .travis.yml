@@ -9,3 +9,8 @@ before_install:
 
 script:
 - ./gradlew cleanTest test
+- sonar-scanner
+
+addons:
+  sonarcloud:
+    organization: "wtjerry-github"
