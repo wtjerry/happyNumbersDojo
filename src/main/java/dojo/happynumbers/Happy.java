@@ -2,19 +2,20 @@ package dojo.happynumbers;
 
 import java.util.ArrayList;
 
-class Happy {
+public class Happy {
 
     private final DigitSplitter digitSplitter;
     private final SquareAndSum squareAndSum;
     private final LoopDetector loopDetector;
+    private int x = 0;
 
-    Happy(DigitSplitter digitSplitter, SquareAndSum squareAndSum, LoopDetector loopDetector) {
+    public Happy(DigitSplitter digitSplitter, SquareAndSum squareAndSum, LoopDetector loopDetector) {
         this.digitSplitter = digitSplitter;
         this.squareAndSum = squareAndSum;
         this.loopDetector = loopDetector;
     }
 
-    boolean validate(final int number) {
+    public boolean validate(final int number) {
         var history = new ArrayList<Integer>();
         var isLoop = false;
         var sumOfSquares = number;
@@ -27,5 +28,13 @@ class Happy {
         }
 
         return sumOfSquares == 1;
+    }
+
+    public void testMe() throws Exception {
+        if(x != 0){
+            throw new Exception();
+        }
+
+        x = 2;
     }
 }
