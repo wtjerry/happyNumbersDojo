@@ -16,8 +16,9 @@ class Happy {
 
     boolean validate(final int number) {
         var digits = this.digitSplitter.split(number);
-        int squareAndSum = this.squareAndSum.squareAndSum(digits);
-        this.loopDetector.isLoop(Collections.emptyList(), squareAndSum);
+        var sumOfSquares = this.squareAndSum.squareAndSum(digits);
+        
+        this.loopDetector.isLoop(Collections.emptyList(), sumOfSquares);
         return true;
     }
 }
