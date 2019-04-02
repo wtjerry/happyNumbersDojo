@@ -1,6 +1,6 @@
 package dojo.happynumbers;
 
-import java.util.Collections;
+import java.util.ArrayList;
 
 class Happy {
 
@@ -15,10 +15,17 @@ class Happy {
     }
 
     boolean validate(final int number) {
-        var digits = this.digitSplitter.split(number);
-        var sumOfSquares = this.squareAndSum.squareAndSum(digits);
-        
-        this.loopDetector.isLoop(Collections.emptyList(), sumOfSquares);
-        return true;
+        var history = new ArrayList<Integer>();
+        var isLoop = false;
+        var sumOfSquares = number;
+
+        while (!isLoop && sumOfSquares != 1) {
+            var digits = this.digitSplitter.split(sumOfSquares);
+            sumOfSquares = this.squareAndSum.squareAndSum(digits);
+            isLoop = this.loopDetector.isLoop(history, sumOfSquares);
+            history.add(sumOfSquares);
+        }
+
+        return sumOfSquares == 1;
     }
 }
