@@ -8,7 +8,7 @@ before_install:
   - chmod +x gradlew
 
 script:
-- ./gradlew cleanTest test jacocoTestReport
+- ./gradlew cleanTest test jacocoTestReport cucumber
 - sonar-scanner
 
 addons:
