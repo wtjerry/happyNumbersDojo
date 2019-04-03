@@ -1,6 +1,6 @@
-| Travis CI | Appveyor
-| :-------- | :-------
-| [![Build Status](https://travis-ci.org/wtjerry/happyNumbersDojo.svg?branch=master)](https://travis-ci.org/wtjerry/happyNumbersDojo)| [![Build status](https://ci.appveyor.com/api/projects/status/b4l1a7qmjtfg3l95?svg=true)](https://ci.appveyor.com/project/wtjerry/happyNumbersDojo)
+| Travis CI | Appveyor | sonarcloud
+| :-------- | :------- | :---------
+| [![Build Status](https://travis-ci.org/wtjerry/happyNumbersDojo.svg?branch=master)](https://travis-ci.org/wtjerry/happyNumbersDojo)| [![Build status](https://ci.appveyor.com/api/projects/status/b4l1a7qmjtfg3l95?svg=true)](https://ci.appveyor.com/project/wtjerry/happyNumbersDojo)| [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=wtjerry_happyNumbersDojo&metric=alert_status)](https://sonarcloud.io/dashboard?id=wtjerry_happyNumbersDojo)
 [![Linux Build history](https://buildstats.info/travisci/chart/wtjerry/happyNumbersDojo?branch=master&includeBuildsFromPullRequest=false)](https://travis-ci.org/wtjerry/happyNumbersDojo/builds?branch=master) | [![Windows Build history](https://buildstats.info/appveyor/chart/wtjerry/happyNumbersDojo?branch=master&includeBuildsFromPullRequest=false)](https://ci.appveyor.com/project/wtjerry/happyNumbersDojo/history?branch=master)
 
 # happy number dojo
