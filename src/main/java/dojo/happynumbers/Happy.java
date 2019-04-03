@@ -7,7 +7,6 @@ public class Happy {
     private final DigitSplitter digitSplitter;
     private final SquareAndSum squareAndSum;
     private final LoopDetector loopDetector;
-    private int x = 0;
 
     public Happy(DigitSplitter digitSplitter, SquareAndSum squareAndSum, LoopDetector loopDetector) {
         this.digitSplitter = digitSplitter;
@@ -28,13 +27,5 @@ public class Happy {
         }
 
         return sumOfSquares == 1;
-    }
-
-    public void testMe() throws Exception {
-        if(x != 0){
-            throw new Exception();
-        }
-
-        x = 2;
     }
 }
