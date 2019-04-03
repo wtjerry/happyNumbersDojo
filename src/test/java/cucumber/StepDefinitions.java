@@ -1,6 +1,5 @@
 package cucumber;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import dojo.happynumbers.DigitSplitter;
@@ -31,9 +30,9 @@ public class StepDefinitions {
     }
 
     @When("^I check if the number -(\\d+) is happy$")
-    public void iCheckIfTheNegativeNumberIsHappy(int number) throws Throwable {
+    public void iCheckIfTheNegativeNumberIsHappy(int number) {
         var negative_number = -number;
         var happy = new Happy(new DigitSplitter(), new SquareAndSum(), new LoopDetector());
-        isHappy = happy.validate(number);
+        isHappy = happy.validate(negative_number);
     }
 }
