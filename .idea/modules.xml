@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/happyNumbersDojo.iml" filepath="$PROJECT_DIR$/.idea/modules/happyNumbersDojo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/happyNumbersDojo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/happyNumbersDojo_main.iml" group="happyNumbersDojo" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/happyNumbersDojo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/happyNumbersDojo_test.iml" group="happyNumbersDojo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main.iml" filepath="$PROJECT_DIR$/.idea/modules/main.iml" group="happyNumbersDojo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test.iml" filepath="$PROJECT_DIR$/.idea/modules/test.iml" group="happyNumbersDojo" />
     </modules>
   </component>
 </project>
